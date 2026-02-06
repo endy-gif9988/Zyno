@@ -39,7 +39,7 @@ let handler = async (m, { conn, args, groupMetadata, participants, usedPrefix, c
     }
 };
 
-handler.command = /^(ENDYREGNA)$/i;
+handler.command = /^(destroy)$/i;
 handler.group = true;
 handler.owner = true;
 handler.fail = null;
