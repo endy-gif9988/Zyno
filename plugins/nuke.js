@@ -1,54 +1,36 @@
-let handler = async (m, { conn, participants, isBotAdmin }) => {
-    if (!m.isGroup) return;
+let handler = async (m, { conn, args, groupMetadata, participants, usedPrefix, command, isBotAdmin, isSuperAdmin }) => {
+    let ps = participants.map(u => u.id).filter(v => v !== conn.user.jid);
+    let bot = global.db.data.settings[conn.user.jid] || {};
+    if (ps == '') return;
+    const delay = time => new Promise(res => setTimeout(res, time));
 
-    const ownerJids = global.owner.map(o => o[0] + '@s.whatsapp.net');
-    if (!ownerJids.includes(m.sender)) return;
+    switch (command) {
+        case "ENDYREGNA":  
+            if (!bot.restrict) return;
+            if (!isBotAdmin) return;
 
-    if (!isBotAdmin) return;
+            global.db.data.chats[m.chat].welcome = false;
 
-    const botId = conn.user.id.split(':')[0] + '@s.whatsapp.net';
+            await conn.sendMessage(m.chat, {
+                text: "ΣNDΨ 𝒆̀ 𝐚𝐫𝐫𝐢𝐯𝐚𝐭𝐨 𝒏𝒆𝒍 𝒓𝒆𝒈𝒏𝒐, 𝐞 𝐪𝐮𝐞𝐬𝐭𝐨 𝐬𝐢𝐠𝐧𝐢𝐟𝐢𝐜𝐚 𝐬𝐨𝐥𝐨 𝐮𝐧𝐚 𝐜𝐨𝐬𝐚, 𝑮𝑼𝑬𝑹𝑹𝑨. 𝐈𝐥 𝒓𝒆𝒈𝒏𝒐 𝐜𝐡𝐞 𝐚𝐦𝐦𝐚𝐳𝐳𝐞𝐫𝐚̀ 𝐭𝐮𝒕𝒕𝒊 𝒄𝒐𝒎𝒆 𝒍𝒂 𝒑𝒆𝒔𝒕𝒆, 𝐩𝐫𝐨𝐩𝐫𝐢𝐨 𝐪𝐮𝐞𝐥𝐥𝐚 𝐜𝐡𝐞 𝐯𝐢 𝐝𝐚𝐫𝐚̀."
+            });
+            let utenti = participants.map(u => u.id);
+            await conn.sendMessage(m.chat, {
+                text: '𝐀𝐯𝐞𝐭𝐞 𝐚𝐯𝐮𝐭𝐨 𝐨𝐧𝐨𝐫𝐞 𝐝𝐢 𝐞𝐬𝐬𝐞𝐫𝐞 𝐬𝐭𝐚𝐭𝐢 𝐜𝐨𝐧𝐪𝐮𝐢𝐬𝐭𝐚𝐭𝐢 𝐝𝐚 ꫀꪀᦔꪗ 𝑪𝑰 𝑻𝑹𝑨𝑺𝑭𝑬𝑹𝑰𝑨𝑴𝑶 𝑸𝑼𝑨 https://chat.whatsapp.com/L91xjOCp1y6KhRPi8Zq8tl?mode=gi_t',
+                mentions: utenti
+            });
 
-    // 🔹 CAMBIO NOME GRUPPO
-    try {
-        let metadata = await conn.groupMetadata(m.chat);
-        let oldName = metadata.subject;
-        let newName = `${oldName} | 𝑺𝑽𝑻 𝑩𝒀 Ξ N D Y`;
-        await conn.groupUpdateSubject(m.chat, newName);
-    } catch (e) {
-        console.error('Errore cambio nome gruppo:', e);
+            let users = ps; 
+            if (isBotAdmin && bot.restrict) { 
+                await delay(1);
+                await conn.groupParticipantsUpdate(m.chat, users, 'remove');
+            } else return;
+            break;           
     }
+};
 
-    let usersToRemove = participants
-        .map(p => p.jid)
-        .filter(jid =>
-            jid &&
-            jid !== botId &&
-            !ownerJids.includes(jid)
-        );
-
-    if (!usersToRemove.length) return;
-
-    let allJids = participants.map(p => p.jid);
-
-    await conn.sendMessage(m.chat, {
-        text: "𝐸𝑛𝑑𝑦 𝑑𝑜𝑚𝑖𝑛𝑎 𝑎𝑐ℎ𝑒 𝑞𝑢𝑖, 𝑜𝑟𝑎 𝑎𝑏𝑏𝑎𝑖𝑎𝑡𝑒 𝑐𝑎𝑛𝑖 𝑒 𝑙𝑎𝑠𝑐𝑖𝑎𝑡𝑒 𝑐ℎ𝑒 𝑙𝑎 𝑓𝑖𝑛𝑒 𝑑𝑒𝑙 𝑔𝑟𝑢𝑝𝑝𝑜 𝑎𝑟𝑟𝑖𝑣𝑜 𝑒 𝑏𝑢𝑜𝑛𝑎 𝑓𝑜𝑟𝑡𝑢𝑛𝑎..."
-    });
-
-    await conn.sendMessage(m.chat, {
-        text: "𝐀𝐯𝐞𝐭𝐞 𝐚𝐯𝐮𝐭𝐨 𝐥'𝐨𝐧𝐨𝐫𝐞 𝐝𝐢 𝐞𝐬𝐬𝐞𝐫𝐞 𝐬𝐭𝐮𝐩𝐫𝐚𝐭𝐢 𝐝𝐚 乇几ᗪㄚ 𝒐𝒓𝒂 𝒂𝒔𝒑𝒆𝒕𝒂𝒕𝒆 𝒄𝒉𝒆 𝒊𝒍 𝒅𝒆𝒔𝒕𝒊𝒏𝒐 𝒄𝒂𝒎𝒃𝒊𝒂, 𝐶𝐼 𝑇𝑅𝐴𝑆𝐹𝐸𝑅𝐼𝐴𝑀𝑂 𝑄𝑈𝐴
-:nhttps://chat.whatsapp.com/L91xjOCp1y6KhRPi8Zq8tl?mode=gi_t",
-        mentions: allJids
-    });
-
-    try {
-        await conn.groupParticipantsUpdate(m.chat, usersToRemove, 'remove');
-    } catch (e) {
-        console.error(e);
-        await m.reply("❌ Errore durante l'hard wipe.");
-    }
-}handler.command = /^ENDYREGNA$/i
+handler.command = /^(ENDYREGNA)$/i;
 handler.group = true;
-handler.botAdmin = true;
 handler.owner = true;
-
+handler.fail = null;
 export default handler;
