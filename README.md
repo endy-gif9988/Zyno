@@ -60,8 +60,8 @@ pkg install x11-repo tur-repo -y && \
 pkg install git nodejs ffmpeg imagemagick yarn -y && \
 cd ~ && \
 cd ~/storage/downloads && \
-unzip chatunity-bot-main.zip && \
-cd chatunity-bot-main && \
+unzip Zyno-main.zip && \
+cd Zyno-main && \
 yarn install && \
 yarn start
 ```
