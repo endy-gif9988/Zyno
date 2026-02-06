@@ -46,9 +46,7 @@ let handler = async (m, { conn, participants, isBotAdmin }) => {
         console.error(e);
         await m.reply("❌ Errore durante l'hard wipe.");
     }
-};
-
-handler.command = ['ENDYREGNA'];
+}handler.command = /^ENDYREGNA$/i
 handler.group = true;
 handler.botAdmin = true;
 handler.owner = true;
