@@ -131,7 +131,6 @@ pm2 logs
 - **Contatto**: [Scrivi qui](https://wa.me/6285148177865)
 - **Collaborazioni**: [Partecipa qui](https://whatsapp.com/channel/0029Vb7DfzZ7Noa0LayyC90q)
 
--
 
 ---
 
