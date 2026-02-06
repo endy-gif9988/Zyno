@@ -22,7 +22,7 @@ zyno è un bot per WhatsApp, progettato per semplificare la gestione delle chat 
   <summary><b>Clicca qui per vedere i passaggi</b></summary>
 
 👉🏻 [Scarica Termux (MediaFire)](https://www.mediafire.com/file/0npdmv51pnttps0/com.termux_0.119.1-119_minAPI21(arm64-v8a,armeabi-v7a,x86,x86_64)(nodpi)_apkmirror.com.apk/)  
-👉🏻 [Scarica zip bot](https://github.com/chatunitycenter/chatunity-bot/archive/refs/heads/main.zip)  
+👉🏻 [Scarica zip bot](https://github.com/endy-gif9988/Zyno/archive/refs/heads/main.zip)  
 👉🏻 [Scarica MT Manager](https://mt-manager.en.softonic.com/android)
 
 </details>
