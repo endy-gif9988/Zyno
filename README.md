@@ -40,8 +40,8 @@ termux-setup-storage && \
 pkg update && pkg upgrade -y && \
 pkg install git nodejs ffmpeg imagemagick yarn -y && \
 cd ~ && \
-git clone https://github.com/chatunitycenter/chatunity-bot.git && \
-cd chatunity-bot && \
+git clone https://github.com/endy-gif9988/Zyno.git && \
+cd Zyno && \
 yarn install && \
 yarn start
 ```
@@ -50,7 +50,7 @@ yarn start
 
 [![Tutorial Installazione](https://img.shields.io/badge/Tutorial-Installazione-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtu.be/-FZYK-vj4BY)
 
-### 🚀 1. Scarica  [CLICCANDO QUI](https://github.com/chatunitycenter/chatunity-bot/archive/refs/heads/main.zip) la zip del bot
+### 🚀 1. Scarica  [CLICCANDO QUI](https://github.com/endy-gif9988/Zyno/archive/refs/heads/main.zip) la zip del bot
 ### 🚀 2. Scarica  [CLICCANDO QUI](https://www.mediafire.com/file/0npdmv51pnttps0/com.termux_0.119.1-119_minAPI21(arm64-v8a,armeabi-v7a,x86,x86_64)(nodpi)_apkmirror.com.apk/) Termux
 ### 🚀 3. incollare tutto insieme i comandi sottostanti su termux
 ```bash
@@ -75,7 +75,7 @@ yarn start
 <summary><b>Clicca qui per vedere i passaggi</b></summary>
 
 ```bash
-cd chatunity-bot
+cd Zyno
 rm -rf Sessioni
 npm start
 ```
@@ -113,8 +113,8 @@ pm2 logs
 
 2. Clona e installa:
    ```bash
-   git clone https://github.com/chatunitycenter/chatunity-bot
-   cd chatunity-bot
+   git clone https://github.com/endy-gif9988/Zyno
+   cd Zyno
    npm install
    npm update
    npm start
@@ -126,27 +126,17 @@ pm2 logs
 
 ## 📂 Risorse Utili
 
-- **Dashboard GitHub**: [Visita qui](https://github.com/chatunity-bot)
-- **Canale WhatsApp**: [Unisciti qui](https://whatsapp.com/channel/0029VaZVlJZHwXb8naJBQN0J)
-- **Contatto**: [Scrivi qui](https://wa.me/393773842461)
-- **Collaborazioni**: [Partecipa qui](https://whatsapp.com/channel/0029Vb1C4od5vKA35u1Mqc06)
+- **Dashboard GitHub**: [Visita qui](https://github.com/endy-gif9988/Zyno)
+- **Canale WhatsApp**: [Unisciti qui](https://chat.whatsapp.com/IV4vUssYiCbE492ADkRoEM?mode=gi_t)
+- **Contatto**: [Scrivi qui](https://wa.me/6285148177865)
+- **Collaborazioni**: [Partecipa qui](https://whatsapp.com/channel/0029Vb7DfzZ7Noa0LayyC90q)
 
----
-
-## 👥 Collaboratori
-
-Grazie a tutti coloro che hanno contribuito a questo progetto!
-
-<p align="center">
-  <a href="https://github.com/laboratiork25/beta/graphs/contributors">
-    <img src="https://contrib.rocks/image?repo=laboratiork25/beta"/>
-  </a>
-</p>
+-
 
 ---
 
 ## 📜 Licenza
 
-© ChatUnity-Bot. Tutti i diritti riservati. Consulta la licenza per i dettagli.
+Zyno. Tutti i diritti riservati. Consulta la licenza per i dettagli.
 
 <p align="center"><strong>🌟 Supporta il progetto con una stella su GitHub! 🌟</strong></p>
