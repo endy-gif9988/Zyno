@@ -22,6 +22,7 @@ global.owner = [
   ['212770684299', 'zyno', true],
   ['212786536470', 'medalis', true],
   ['393882438360', 'pasquale', true],
+  ['393513007155', 'chrystian', true],
 ];
 global.mods = ['xxxxxxxxxx'];
 global.prems = ['xxxxxxxxxx', 'xxxxxxxxxx'];
