@@ -1,4 +1,4 @@
-                ENDY
+                https://files.catbox.moe/9mmhsw.jpeg
 
 <h1 align="center"> ZYNO 1.0 🤖</h1>
 <p align="center"><strong>Un bot avanzato per WhatsApp, ricco di funzionalità e divertimento!</strong></p>
