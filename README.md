@@ -1,4 +1,4 @@
-<img src="https://files.catbox.moe/9mmhsw.jpeg" alt="Immagine-Whats-App-2025-10-23-ore-19-58-44-580b7b7d" border="0"></a> 
+<img src="https://files.catbox.moe/4xo5j7.jpg" alt="Immagine-Whats-App-2025-10-23-ore-19-58-44-580b7b7d" border="0"></a> 
 </p>
 
 <h1 align="center"> ZYNO 1.0 🤖</h1>
