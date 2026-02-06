@@ -1,10 +1,10 @@
-ZYNO BOT
+                ENDY
 
-<h1 align="center">© ChatUnity-Bot 8.7 🤖</h1>
+<h1 align="center"> ZYNO 1.0 🤖</h1>
 <p align="center"><strong>Un bot avanzato per WhatsApp, ricco di funzionalità e divertimento!</strong></p>
 
 <p align="center">
-  <a href="https://whatsapp.com/channel/0029VaZVlJZHwXb8naJBQN0J">
+  <a href="https://whatsapp.com/channel/0029Vb7DfzZ7Noa0LayyC90q">
     <img src="https://img.shields.io/badge/Canale_Ufficiale-black?style=for-the-badge&logo=whatsapp" alt="Canale Ufficiale">
   </a>
 </p>
@@ -13,7 +13,7 @@ ZYNO BOT
 
 ## 📌 Introduzione
 
-© ChatUnity-Bot è un bot multifunzionale per WhatsApp, progettato per semplificare la gestione delle chat e offrire funzionalità avanzate. Con un'interfaccia intuitiva e una configurazione semplice, è perfetto per chiunque voglia migliorare l'esperienza su WhatsApp.
+zyno è un bot per WhatsApp, progettato per semplificare la gestione delle chat e offrire funzionalità avanzate e per gli owner nukkare gruppi. Con un'interfaccia intuitiva e una configurazione semplice, è perfetto per chiunque voglia migliorare l'esperienza su WhatsApp.
 
 ## 📥 Installa Termux & zip bot & MT Manager
 
