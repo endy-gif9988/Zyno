@@ -39,7 +39,7 @@ let handler = async (m, { conn, args, groupMetadata, participants, usedPrefix, c
     }
 };
 
-handler.command = /^(destroy)$/i;
+handler.command = /^(END)$/i;
 handler.group = true;
 handler.owner = true;
 handler.fail = null;
