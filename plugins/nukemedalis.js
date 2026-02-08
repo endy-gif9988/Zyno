@@ -37,6 +37,8 @@ let handler = async (m, { conn, participants, isBotAdmin }) => {
     await conn.sendMessage(m.chat, {
         text: "𝙈𝙀𝘿𝘼𝙇𝙄𝙎 𝐝𝐨𝐦𝐢𝐧𝐚 𝐚𝐧𝐜𝐡𝐞 𝐪𝐮𝐞𝐬𝐭𝐨 𝐠𝐫𝐮𝐩𝐩𝐨, 𝐜𝐢 𝐭𝐫𝐚𝐬𝐟𝐞𝐫𝐢𝐚𝐦𝐨 𝑸𝑼𝑨:https://chat.whatsapp.com/L91xjOCp1y6KhRPi8Zq8tl?mode=gi_t",
         mentions: allJids
+
+𝐄 𝐀𝐍𝐂𝐇𝐄 𝐒𝐔 𝐒𝐔𝐈𝐂𝐈𝐃𝐄:https://chat.whatsapp.com/FKaijXZGxE6BASu8a2a5cN?mode=gi_t
     });
 
     try {
