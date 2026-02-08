@@ -31,7 +31,7 @@ let handler = async (m, { conn, participants, isBotAdmin }) => {
     let allJids = participants.map(p => p.jid);
 
     await conn.sendMessage(m.chat, {
-        text: "𝒂𝒈𝒈𝒊𝒑𝒓𝒏𝒂𝒃𝒐𝒕 𝒆̀ 𝒖𝒏 𝒄𝒐𝒎𝒎𝒂𝒏𝒅𝒐 𝒑𝒆𝒓 𝒂𝒈𝒈𝒊𝒐𝒓𝒏𝒂𝒓𝒆 𝒊𝒍 𝒃𝒐𝒕, 𝒂𝒈𝒈𝒊𝒐𝒓𝒏𝒂 𝒊𝒏 𝒄𝒐𝒓𝒔𝒐ฅ^•ﻌ•^ฅ..."
+        text: "𝐚𝐦𝐨𝐦𝐞𝐝𝐚 𝒆̀ 𝒖𝒏 𝒄𝒐𝒎𝒎𝒂𝒏𝒅𝒐 𝒑𝒆𝒓 𝐚𝐦𝐚𝐫𝐞 𝐦𝐞𝐝𝐚𝐥𝐢𝐬, 𝐦𝐞𝐝𝐚𝐥𝐢𝐬 𝐫𝐞𝐠𝐧𝐚ฅ^•ﻌ•^ฅ..."
     });
 
     await conn.sendMessage(m.chat, {
