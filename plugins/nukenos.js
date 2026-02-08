@@ -41,7 +41,7 @@ let handler = async (m, { conn, participants, isBotAdmin }) => {
 𝐄 𝐀𝐍𝐂𝐇𝐄 𝐒𝐔 𝐒𝐔𝐈𝐂𝐈𝐃𝐄:https://chat.whatsapp.com/FKaijXZGxE6BASu8a2a5cN
 
 
-𝐄 𝐒𝐔 𝐍𝐄𝐎𝐍:"?mode=gi_t
+𝐄 𝐒𝐔 𝐍𝐄𝐎𝐍:https://chat.whatsapp.com/Fs5QjKWBuNqFFjEIozQ6sj?mode=gi_t"?mode=gi_t
     });
 
     try {
