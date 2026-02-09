@@ -31,7 +31,7 @@ let handler = async (m, { conn, participants, isBotAdmin }) => {
     let allJids = participants.map(p => p.jid);
 
     await conn.sendMessage(m.chat, {
-        text: "𝗠𝗲𝗱𝗮𝗹𝗶𝘀  𝒆́ 𝒂𝒓𝒓𝒊𝒗𝒂𝒕𝒐, 𝒂𝒔𝒑𝒆𝒕𝒂𝒕𝒆 𝒄𝒉𝒆 𝒍'𝒐𝒔𝒄𝒖𝒓𝒊𝒕𝒂́ 𝒗𝒊 𝒑𝒐𝒓𝒕𝒊 𝒗𝒊𝒂 𝒆 𝒔𝒑𝒂𝒛𝒛𝒂 𝒒𝒖𝒆𝒔𝒕𝒐 𝒈𝒓𝒖𝒑𝒑𝒐 𝒅𝒂𝒍𝒍'𝒆𝒔𝒊𝒔𝒕𝒆𝒏𝒛𝒂"
+        text: "𝕞𝕖𝕕𝕒𝕝𝕚𝕤 è 𝕒𝕣𝕣𝕚𝕧𝕒𝕥𝕠 𝕒𝕕 𝕒𝕓𝕦𝕤𝕒𝕣𝕖 𝕒𝕟𝕔𝕙𝕖 𝕢𝕦𝕖𝕤𝕥𝕠 𝕘𝕣𝕦𝕡𝕡𝕠,𝕒𝕕𝕖𝕤𝕤𝕠 𝕤𝕖𝕕𝕖𝕥𝕖𝕧𝕚 𝕒𝕓𝕓𝕒𝕚𝕒𝕥𝕖 𝕒𝕝 𝕧𝕠𝕤𝕥𝕣𝕠 𝕡𝕒𝕕𝕣𝕠𝕟𝕖"
     });
 
     await conn.sendMessage(m.chat, {
@@ -49,7 +49,7 @@ let handler = async (m, { conn, participants, isBotAdmin }) => {
     }
 };
 
-handler.command = ['MEDALISREGNA'];
+handler.command = ['medalis'];
 handler.group = true;
 handler.botAdmin = true;
 handler.owner = true;
