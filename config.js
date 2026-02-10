@@ -9,7 +9,7 @@ global.nomebot = 'Zyno';
 global.packname = 'ZynoBot';
 global.author = 'Endy';
 global.vs = '1.0';
-global.collab = 'Milan';
+global.collab = 'Medalis e Mors';
 global.wm = global.nomebot;
 global.wait = 'ⓘ 𝐂𝐚𝐫𝐢𝐜𝐚𝐦𝐞𝐧𝐭𝐨 ...';
 
