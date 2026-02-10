@@ -15,14 +15,15 @@ global.wait = 'ⓘ 𝐂𝐚𝐫𝐢𝐜𝐚𝐦𝐞𝐧𝐭𝐨 ...';
 
 
 global.owner = [
-  ['212632902713', 'endy=main founder', true],
+  ['212632902713', 'endy=founder', true],
   ['212644391140', 'mia=admin', true], 
   ['212642043720', 'cristian=co-founder', true],
   ['393661122722', 'lucifear=staff', true],
   ['212775270361', 'zyno=bot', true],
   ['13678280807', 'medalis=owner', true],
   ['393882438360=staff', 'pasquale', true],
-  ['393513007155=staff', 'chrystian', true],
+  ['393513007155', 'chrystian=staff', true],
+  ['212786300182', 'gabry=staff', true], 
 ];
 global.mods = ['xxxxxxxxxx'];
 global.prems = ['xxxxxxxxxx', 'xxxxxxxxxx'];
