@@ -21,7 +21,7 @@ global.owner = [
   ['393661122722', 'lucifear=staff', true],
   ['212775270361', 'zyno=bot', true],
   ['13678280807', 'medalis=owner', true],
-  ['393882438360=staff', 'pasquale', true],
+  ['393882438360', 'pasquale=staff', true],
   ['393513007155', 'chrystian=staff', true],
   ['212786300182', 'gabry=staff', true], 
 ];
