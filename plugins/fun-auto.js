@@ -54,7 +54,7 @@ let handler = async (m, { conn, isAdmin }) => {
     ];
 
     const scelta = loghi[Math.floor(Math.random() * loghi.length)];
-    const frasi = ['🚘 INDOVINA IL LOGO DELL'AUTO GAY, PRONT?!', '🏁 Che marca è questa?', '🔍 Riconosci questa auto o sei così down da non sapee che logo è?'];
+    const frasi = ['🚘 INDOVINA IL LOGO DELL'AUTO GAY, PRONTI?!', '🏁 Che marca è questa?', '🔍 Riconosci questa auto o sei così down da non sapere che logo è?'];
     const frase = frasi[Math.floor(Math.random() * frasi.length)];
 
     global.logoGame = global.logoGame || {};
