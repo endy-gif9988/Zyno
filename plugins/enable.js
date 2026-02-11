@@ -48,7 +48,7 @@ const MENU_FOOTER = `
 ꒷꒦ ✦ ୧・︶ : ︶ ꒷꒦ ‧₊ ୧
 
 ╰♡꒷ ๑ ⋆˚₊⋆───ʚ˚ɞ───⋆˚₊⋆ ๑ ⪩
- ୧・𝐂𝐎𝐋𝐋𝐀𝐁: 𝐎𝐍𝐄 𝐏𝐈𝐄𝐂𝐄
+ ୧・𝐂𝐎𝐋𝐋𝐀𝐁: 𝐌𝐄𝐃𝐀𝐋𝐈𝐒 & 𝐌𝐎𝐑𝐒
  ୧・*𝐒𝐔𝐏𝐏𝐎𝐑𝐓𝐎:* (.supporto)
 ╰♡꒷ ๑ ⋆˚₊⋆───ʚ˚ɞ───⋆˚₊⋆ ๑ ⪩
 `;
@@ -67,7 +67,7 @@ const BUTTON_SECTION_TITLE = '🔧 Funzioni';
 const BUTTON_TEXT = '⚙ Impostazioni';
 const ONLY_OWNER_MSG = '❌ Solo il proprietario può attivare/disattivare questa funzione.';
 const ONLY_PRIVATE_CHATBOT_MSG = '❌ Puoi attivare/disattivare la funzione *ChatbotPrivato* solo in chat privata.';
-const ONLY_CHATUNITY_BASE_MSG = 'Questo comando è disponibile solo con la base di ChatUnity.';
+const ONLY_ZYNO_BASE_MSG = 'Questo comando è disponibile solo con la base di Zyno-bot.';
 
 const PLACEHOLDER_THUMB = null;
 const PLACEHOLDER_VCARD = 'BEGIN:VCARD...';
