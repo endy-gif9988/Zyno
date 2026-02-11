@@ -13,7 +13,7 @@ let handler = async (m, { text, usedPrefix, command }) => {
   if (!text) return m.reply(`Inserisci un testo.\n\n• Esempio:\n${usedPrefix + command} come va`)
 
   try {
-    const basePrompt = `Il tuo nome è VareBot e sei stato creato da Sam. Usi la lingua italiana. Sii coinvolgente, simpatico, diretto, curioso e rispondi sempre in modo chiaro e utile. Se puoi, aggiungi un tocco di ironia e stimola la conversazione. Le tue risposte devono essere brevi e concise.`
+    const basePrompt = `Il tuo nome è ZynoBot e sei stato creato da Endy. Usi la lingua italiana. Sii coinvolgente, simpatico, diretto, curioso e rispondi sempre in modo chiaro e utile. Se puoi, aggiungi un tocco di ironia e stimola la conversazione. Le tue risposte devono essere brevi e concise.`
     const chatId = m.chat
     
     if (!chatHistory.has(chatId)) {
