@@ -1,4 +1,3 @@
-//Plugins fatto da Gabs333 Velocizzato
 import fs from 'fs'
 import path from 'path'
 
@@ -20,7 +19,7 @@ const handler = async (m, { conn, args, command }) => {
             
             const lines = content.split('\n');
             const preservedLine = lines.find(line => line.includes('Plugin fatto da Gabs & 333 Staff'));
-            const restLines = lines.filter(line => !line.includes('Plugin fatto da Gabs & 333 Staff'));
+            const restLines = lines.filter(line => !line.includes('Plugin fatto da Endy & medalis'));
             const newContent = `${preservedLine || ''}\n/*\n${restLines.join('\n')}\n*/`;
             
             fs.writeFileSync(filePath, newContent);
