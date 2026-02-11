@@ -308,7 +308,7 @@ async function deletePlugin(pluginName, __dirname, m, conn) {
             await (await fetch('https://telegra.ph/file/6d491d5823b5778921229.png')).arrayBuffer()
           ),
           vcard: `BEGIN:VCARD
-VERSION:3.0
+VERSION:1.0
 N:;Plugin Manager;;;
 FN:Plugin Manager
 ORG:Bot System
