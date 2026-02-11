@@ -9,8 +9,8 @@ let handler = async (m, { conn, participants, args }) => {
     let p1 = global.db.data.users[user1]?.pokemons || []
     let p2 = global.db.data.users[user2]?.pokemons || []
 
-    if (!p1.length) return m.reply('😓 Non hai Pokémon per combattere!')
-    if (!p2.length) return m.reply('😓 Il tuo avversario non ha Pokémon per combattere!')
+    if (!p1.length) return m.reply('😓 Non hai Pokemon per sfidare e combattere 💔!')
+    if (!p2.length) return m.reply('😓 Il tuo avversario non ha Pokémon per combattere haha è scarso!')
 
     let poke1 = pickRandom(p1)
     let poke2 = pickRandom(p2)
