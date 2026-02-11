@@ -9,12 +9,12 @@ const __dirname = path.dirname(__filename);
 
 const handler = async (message, { conn, usedPrefix, command }) => {
     const socialText = `*📱 SOCIAL ZYNO BOT*\n\n`
-                    + `🌍 *Instagram:*\n`
+                                    + `🌍 *Instagram:*\n`
                     + `https://www.instagram.com/zynobot.md?igsh=bHdvcG10bGFoeHo2`
                     + `📢 *TikTok:*\n`
                     + `https://www.tiktok.com/@endys8265?_r=1&_t=ZN-93pmL5l2PPa`
                     + `💬 *GitHub:*\n`
-                    + `https://github.com/endy-gif9988/Zyno`
+                    + `https://github.com/endy-gif9988/Zyno`                         
 
     await conn.sendMessage(
         message.chat,
