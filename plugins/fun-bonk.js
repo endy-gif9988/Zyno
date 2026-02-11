@@ -7,7 +7,7 @@ let handler = async (m, { conn, text }) => {
 
         // Verifica se l'utente ha una foto profilo
         if (!avatarUrl) {
-            return conn.reply(m.chat, '⚠️ Questo comando non funziona per utenti senza foto profilo.', m);
+            return conn.reply(m.chat, 'Ma allora sei disabile🤦 ma capisci che questo comando funziona solo con chi ha un immagine profilo.', m);
         }
 
         let img = await jimp.read('https://i.imgur.com/nav6WWX.png');
