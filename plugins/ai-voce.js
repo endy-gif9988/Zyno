@@ -1,4 +1,4 @@
-//ai vocale di Onix, di Riad 
+//ai vocale di Zyno, di Endy
 import fetch from 'node-fetch';
 import gtts from 'node-gtts';
 import { readFileSync, unlinkSync } from 'fs';
