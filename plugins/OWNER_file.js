@@ -4,7 +4,7 @@ import path from 'path';
 let handler = async (m, { text, conn, usedPrefix, command }) => {
   let fileName = text.trim();
   if (!fileName) {
-    return m.reply("⚠️ Devi specificare il nome del file da creare. Es: `.file nome.txt`");
+    return m.reply("⚠️ Devi specificare il nome del file da creare disabile. Es: `.file nome.txt`");
   }
   
   let filePath = path.join(process.cwd(), fileName);
@@ -18,7 +18,7 @@ let handler = async (m, { text, conn, usedPrefix, command }) => {
       console.error(`Errore nella creazione del file: ${err.message}`);
       return m.reply(`❌ Errore nella creazione del file: ${err.message}`);
     }
-    m.reply(`✅ Il file "${fileName}" è stato creato con successo nella cartella del bot.`);
+    m.reply(`✅ Il file "${fileName}" è stato creato con successo nella cartella del bot, finalmente abbiamo capito frocio.`);
   });
 };
 
