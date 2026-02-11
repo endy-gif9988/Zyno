@@ -18,13 +18,13 @@ let handler = async (m, { conn, text, participants, command, usedPrefix }) => {
 
     // Se ancora non c'è nessuno da baciare
     if (!utentiMenzionati.length) {
-        return m.reply("💋 *Devi menzionare qualcuno per baciarlo!*\nEsempio: *.bacia @utente*");
+        return m.reply("💋 *Devi taggare qualcuno per baciarlo puttana❤️!*\nEsempio: *.bacia @utente*");
     }
 
     let utenteBaciato = utentiMenzionati[0];
 
     // Messaggio del bacio
-    let messaggio = `💋 *${await conn.getName(m.sender)} ha dato un bacio a ${await conn.getName(utenteBaciato)}!* 😘`;
+    let messaggio = `💋 *${await conn.getName(m.sender)} il coglione ha dato un bacio a ${await conn.getName(utenteBaciato)}!* 😘`;
 
     await conn.sendMessage(m.chat, { text: messaggio, mentions: [utenteBaciato] }, { quoted: m });
 };
