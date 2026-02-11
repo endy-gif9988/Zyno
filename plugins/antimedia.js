@@ -1,4 +1,4 @@
-// antimedia by Onix, di Riad
+// antimedia by Endy 
 export async function before(m, { conn }) {
     if (!m.isGroup || m.isBaileys) return true;
 
