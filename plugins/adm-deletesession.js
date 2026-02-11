@@ -1,4 +1,4 @@
-//Plugin fatto da Axtral_WiZaRd e modificato da dieh!
+//Plugin fatto da Endy!
 import { existsSync, promises as fsPromises } from 'fs';
 import path from 'path';
 
