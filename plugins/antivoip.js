@@ -1,4 +1,4 @@
-//Plugins di Gab333 Tuttu i VoIP 
+//Plugins di Endy
 let handler = m => m
 handler.before = async function (m, {conn, isAdmin, isBotAdmin, isOwner, isROwner}) {
     if (!m.isGroup) return !1
