@@ -8,13 +8,13 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const handler = async (message, { conn, usedPrefix, command }) => {
-    const socialText = `*📱 SOCIAL CHATUNITY*\n\n`
+    const socialText = `*📱 SOCIAL ZYNO BOT*\n\n`
                     + `🌍 *Instagram:*\n`
-                    + `https://instagram.com/chatunity_\n\n`
+                    + `https://instagram.com/zynobot.md\n\n`
                     + `📢 *TikTok:*\n`
-                    + `https://www.tiktok.com/@chatunitycenter\n\n`
+                    + `https://www.tiktok.com/@endys8265\n\n`
                     + `💬 *GitHub:*\n`
-                    + `https://github.com/chatunitycenter\n\n`
+                    + `https://github.com/endy-gif9988\n\n`
 
     await conn.sendMessage(
         message.chat,
