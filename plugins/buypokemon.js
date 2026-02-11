@@ -28,7 +28,7 @@ let handler = async (m, { conn, args }) => {
   data.limit -= totalCost;
   data.packInventory[type] += quantity;
 
-  return m.reply(`✅ Hai comprato *${quantity}* pacchetti ${type.toUpperCase()}!\n📦 Totale ora: ${data.packInventory[type]}\n💸 UnityCoins rimanenti: ${data.limit}`);
+  return m.reply(`✅ Hai comprato *${quantity}* pacchetti ${type.toUpperCase()}!\n📦 Totale ora: ${data.packInventory[type]}\n💸 ZynoCoin rimanenti: ${data.limit}`);
 };
 
 handler.help = ['buypokemon <tipo> <quantità>'];
