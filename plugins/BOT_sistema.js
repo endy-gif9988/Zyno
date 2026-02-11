@@ -33,7 +33,7 @@ const handler = async (m, { conn }) => {
     const nodeUsage = process.memoryUsage();
     const diskSpace = getDiskSpace();
 
-    const message = `✅ *STATO DEL SISTEMA*
+    const message = `✅ *STATO DEL SISTEMA DI ZYNO BOT*
 
 🚩 *Host ⪼* ${hostname}
 🏆 *Sistema Operativo ⪼* ${platform}
