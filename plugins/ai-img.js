@@ -40,7 +40,7 @@ var handler = async (m, { text, usedPrefix, command, conn }) => {
 
     await conn.sendMessage(m.chat, {
       image: imageBuffer,
-      caption: `💸 *Immagine generata da chatunity IA developed by onix & origin* 🚀\n✨ Prompt: *${text}*`
+      caption: `💸 *Immagine generata da Zyno IA developed by Endy & Medalis* 🚀\n✨ Prompt: *${text}*`
     });
   } catch (error) {
     console.error("FluxAI Error:", error);
