@@ -2,7 +2,7 @@ let handler = async (m, { conn, isAdmin }) => {
   const text = m.text?.toLowerCase();
 
   if (text === '.skiplogo') {
-    if (!m.isGroup) return m.reply('⚠ Questo comando funziona solo nei gruppi!');
+    if (!m.isGroup) return m.reply('⚠ Questo comando è solo per i gruppi!');
     if (!global.logoGame?.[m.chat]) return m.reply('⚠ Nessuna partita attiva!');
     if (!isAdmin && !m.fromMe) return m.reply('❌ Solo admin possono interrompere!');
     clearTimeout(global.logoGame[m.chat].timeout);
@@ -54,7 +54,7 @@ let handler = async (m, { conn, isAdmin }) => {
     ];
 
     const scelta = loghi[Math.floor(Math.random() * loghi.length)];
-    const frasi = ['🚘 INDOVINA IL LOGO!', '🏁 Che marca è questa?', '🔍 Riconosci questa auto?'];
+    const frasi = ['🚘 INDOVINA IL LOGO DELL'AUTO GAY, PRONT?!', '🏁 Che marca è questa?', '🔍 Riconosci questa auto o sei così down da non sapee che logo è?'];
     const frase = frasi[Math.floor(Math.random() * frasi.length)];
 
     global.logoGame = global.logoGame || {};
@@ -87,7 +87,7 @@ handler.before = async (m, { conn }) => {
     const congratsMessage = `
 ╭━『 🎉 RISPOSTA CORRETTA! 』━╮
 ┃
-┃ 🚗 Marchio: ${game.risposta}
+┃ 🚗 Logo: ${game.risposta}
 ┃ ⏱ Tempo impiegato: ${timeTaken}s
 ┃
 ┃ 🎁 Ricompense:
@@ -96,7 +96,7 @@ handler.before = async (m, { conn }) => {
 ┃
 ╰━━━━━━━━━━━━━━━━╯
 
-> \\by chatunity\\`;
+> \\by zyno\\`;
 
     await conn.reply(m.chat, congratsMessage, m);
     delete global.logoGame[m.chat];
