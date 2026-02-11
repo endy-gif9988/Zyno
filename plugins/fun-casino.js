@@ -53,7 +53,7 @@ let handler = async (m, { conn, args, usedPrefix, command, DevMode }) => {
         if (Aku > Kamu) {
             conn.reply(
                 m.chat,
-                `🌵 Vediamo che numeri avete!\n\n➠ *Zyno-bot*: ${Aku}\n➠ *${username}*: ${Kamu}\n\n> ${username}, *HAI PERSO HAHA SEI SCARSO* ${formatNumber(count)} 💶 Unitycoins.`,
+                `🌵 Vediamo che numeri avete!\n\n➠ *Zyno-bot*: ${Aku}\n➠ *${username}*: ${Kamu}\n\n> ${username}, *HAI PERSO HAHA SEI SCARSO* ${formatNumber(count)} 💶 ZynoCoins.`,
                 m,
                 rcanal
             );
