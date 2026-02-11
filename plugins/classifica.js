@@ -10,7 +10,7 @@ let leaderboardHandler = async (m, { conn }) => {
     .slice(0, 10)
 
   if (users.length === 0) {
-    return m.reply('😢 Nessun collezionista trovato.')
+    return m.reply('non abbiamo trovato nessuna collezion🥀💔.')
   }
 
   let rankMsg = `🏆 *Top 10 Collezionisti Pokémon*:\n\n` + users.map((u, i) =>
