@@ -12,7 +12,7 @@ const handler = async (message, { conn, usedPrefix, command }) => {
                     + `🌍 *Instagram:*\n`
                     + `https://www.instagram.com/zynobot.md?igsh=bHdvcG10bGFoeHo2`
                     + `📢 *TikTok:*\n`
-                    + `https://www.tiktok.com/@chatunitycenter\n\n`
+                    + `https://www.tiktok.com/@endys8265?_r=1&_t=ZN-93pmL5l2PPa`
                     + `💬 *GitHub:*\n`
                     + `https://github.com/chatunitycenter\n\n`
 
