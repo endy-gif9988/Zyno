@@ -21,7 +21,7 @@ let handler = async (m, { conn, args, usedPrefix, command, DevMode }) => {
         const maxUC = Math.max(10, Math.floor(user.limit / 2));
         const tagli = [10, 50, 100, 250, 500, 1000].filter(n => n <= maxUC);
         return conn.sendMessage(m.chat, {
-            text: `🚩 Inserisci la quantità di 💶 Unitycoins che vuoi scommettere contro *chatunity-bot*.\n\nEsempio:\n> *${usedPrefix + command}* 100`,
+            text: `🚩 Inserisci la quantità di 💶 ZynoCoin che vuoi scommettere contro *Zyno-Bot*.\n\nEsempio:\n> *${usedPrefix + command}* 100`,
             buttons: tagli.map(n => ({
                 buttonId: `${usedPrefix + command} ${n}`,
                 buttonText: { displayText: `${n} 💶` },
@@ -33,7 +33,7 @@ let handler = async (m, { conn, args, usedPrefix, command, DevMode }) => {
     // Applica il cooldown SOLO dopo che l'utente ha scelto una quantità valida
     if (cooldowns[m.sender] && Date.now() - cooldowns[m.sender] < tiempoEspera * 1000) {
         let tiempoRestante = segundosAHMS(Math.ceil((cooldowns[m.sender] + tiempoEspera * 1000 - Date.now()) / 1000));
-        conn.reply(m.chat, `🚩 Hai già avviato una scommessa di recente, aspetta *⏱ ${tiempoRestante}* per scommettere di nuovo.`, m, rcanal);
+        conn.reply(m.chat, `Hai già avuto la tua scommessa mongoloide aspetta dio cane*⏱ ${tiempoRestante}* per scommettere di nuovo.`, m, rcanal);
         return;
     }
 
@@ -53,7 +53,7 @@ let handler = async (m, { conn, args, usedPrefix, command, DevMode }) => {
         if (Aku > Kamu) {
             conn.reply(
                 m.chat,
-                `🌵 Vediamo che numeri avete!\n\n➠ *chatunity-bot*: ${Aku}\n➠ *${username}*: ${Kamu}\n\n> ${username}, *HAI PERSO* ${formatNumber(count)} 💶 Unitycoins.`,
+                `🌵 Vediamo che numeri avete!\n\n➠ *Zyno-bot*: ${Aku}\n➠ *${username}*: ${Kamu}\n\n> ${username}, *HAI PERSO HAHA SEI SCARSO* ${formatNumber(count)} 💶 Unitycoins.`,
                 m,
                 rcanal
             );
@@ -61,7 +61,7 @@ let handler = async (m, { conn, args, usedPrefix, command, DevMode }) => {
             user.limit += count * 2;
             conn.reply(
                 m.chat,
-                `🌵 Vediamo che numeri avete!\n\n➠ *chatunity-bot*: ${Aku}\n➠ *${username}*: ${Kamu}\n\n> ${username}, *HAI VINTO* ${formatNumber(count * 2)} 💶 Unitycoins.`,
+                `🌵 Vediamo che numeri avete!\n\n➠ *zyno-bot*: ${Aku}\n➠ *${username}*: ${Kamu}\n\n> ${username}, *HAI VINTO, COMPLIMENTI, LA PROSSIMA VOLTA TI BATTO* ${formatNumber(count * 2)} 💶 ZynoCoins.`,
                 m,
                 rcanal
             );
@@ -69,13 +69,13 @@ let handler = async (m, { conn, args, usedPrefix, command, DevMode }) => {
             user.limit += count * 1;
             conn.reply(
                 m.chat,
-                `🌵 Vediamo che numeri avete!\n\n➠ *chatunity-bot*: ${Aku}\n➠ *${username}*: ${Kamu}\n\n> ${username}, ottieni ${formatNumber(count * 1)} 💶 Unitycoins.`,
+                `🌵 Vediamo che numeri avete!\n\n➠ *zyno-bot*: ${Aku}\n➠ *${username}*: ${Kamu}\n\n> ${username}, ottieni ${formatNumber(count * 1)} 💶 ZynoCoins.`,
                 m,
                 rcanal
             );
         }
     } else {
-        conn.reply(m.chat, `Non hai *${formatNumber(count)} 💶 Unitycoins* da scommettere!`, m, rcanal);
+        conn.reply(m.chat, `Non hai *${formatNumber(count)} 💶 ZynoCoins* da scommettere frocio!`, m, rcanal);
     }
 };
 
