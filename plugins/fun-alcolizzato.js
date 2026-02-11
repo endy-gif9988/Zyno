@@ -28,7 +28,7 @@ ${finalPhrase}
             forwardedNewsletterMessageInfo: {
                 newsletterJid: '120363259442839354@newsletter',
                 serverMessageId: '',
-                newsletterName: `ChatUnity` // Utilizzo della variabile botName
+                newsletterName: `Zyno` // Utilizzo della variabile botName
             },
         }
     };
