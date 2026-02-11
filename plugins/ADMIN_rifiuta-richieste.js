@@ -1,4 +1,3 @@
-//Plugins fatto da Gabs333 Velocizzato
 const validateGroupContext = (message) => {
     if (!message.isGroup) {
         throw new Error("Questo comando si usa solo nei gruppi.");
