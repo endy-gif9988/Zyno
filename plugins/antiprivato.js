@@ -1,4 +1,4 @@
-// Crediti by Gabs & AntiPrivato Aggiornato
+// Crediti by Endy
 
 export async function before(m, { conn, isAdmin, isBotAdmin, isOwner, isROwner }) {
   let message = "";
