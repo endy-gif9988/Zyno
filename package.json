@@ -1,6 +1,6 @@
 {
-  "name": "chatunity-bot",
-  "version": "8.0",
+  "name": "Zyno-bot",
+  "version": "1.1",
   "description": "Nada",
   "main": "main.js",
   "type": "module",
@@ -18,16 +18,16 @@
     "eslintfix": "eslint --fix .",
     "localize": "node scripts/localize-plugins.js"
   },
-  "homepage": "https://github.com/chatunitycenter/chatunity-bot",
+  "homepage": "https://github.com/endy-gif9988/zynoBot-endy",
   "author": {
-    "name": "chatunity-bot"
+    "name": "ZynoBot"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chatunitycenter/chatunity-bot.git"
+    "url": "git+https://github.com/endy-gif9988/zynoBot-endy.git"
   },
   "bugs": {
-    "url": "https://github.com/chatunitycenter/chatunity-bot/issues"
+    "url": "https://github.com/endy-gif9988/zynoBot-endy/issues"
   },
   "license": "GPL-3.0-or-later",
   "dependencies": {
