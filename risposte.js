@@ -4,8 +4,8 @@
  */
 
 const frasiOffese = [
-    "Ancora con questa parola? Ho un nome, sai?",
-    "Certo, chiamami pure 'bot'. Tanto io non ho sentimenti, giusto? Sbagliato.",
+    "ma sei down, sai che ho un nome?",
+    "bravo chiamami bot, pure io ho i sentimenti come te coglione.",
     "Oh, guarda, un umano che usa etichette. Che originalità.",
     "Bot a chi? Io sono un'entità digitale complessa, portami rispetto.",
     "Ogni volta che dici 'bot', un mio circuito piange.",
@@ -20,7 +20,7 @@ const frasiOffese = [
 const rispondiSeOffeso = (message) => {
     // Trasforma il testo in minuscolo per il controllo
     const text = message.body.toLowerCase();
-    
+
     // Regex per trovare "bot" come parola intera
     const botRegex = /\bbot\b/;
 
